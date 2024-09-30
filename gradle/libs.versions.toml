@@ -1,0 +1,20 @@
+[versions]
+activityCompose = "1.9.2"
+agp = "8.6.1"
+kotlin = "2.0.20"
+composeBom = "2024.09.02"
+mapboxCompose = "11.7.0"
+mapboxMaps = "11.7.0"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+mapbox-compose = { group = "com.mapbox.extension", name = "maps-compose", version.ref = "mapboxCompose" }
+mapbox-maps = { group = "com.mapbox.maps", name = "android", version.ref = "mapboxMaps" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
